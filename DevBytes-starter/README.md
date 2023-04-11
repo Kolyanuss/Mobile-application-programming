@@ -1,38 +1,37 @@
-DevByte - Starter Code
-======================
+DevByteRepository - Solution Code
+==================================
 
-Use as starter code for the Repository codelab.
+Solution code for the Repository codelab.
 
 Introduction
 ------------
 
-DevByteViewer app displays a list of DevByte videos. DevByte videos are short
-videos made by the Google Android developer relations team to introduce new
-developer features on Android. They're also a great way to stay up to date with
-new features as they come out as well as tips and best practices. This app
-fetches the DevByte video list from the network using the Retrofit library and
-displays it on the screen. It uses a ViewModel and LiveData to hold the data and
-update the UI. Since the video list is big, results are displayed in a
-RecyclerView.
-
+DevByteRepository app displays a list of DevByte videos. DevByte videos are
+short videos made by the Google Android developer relations team to introduce
+new developer features on Android. This app demonstrates the Repository pattern,
+the recommended best practice for code separation and architecture. Using
+repository pattern the data layer is abstracted from the rest of the app.
+Repositories act as mediators between different data sources, such as persistent
+models, web services, and caches and the rest of the app.
 
 Pre-requisites
 --------------
 
 You need to know:
 - How to open, build, and run Android apps with Android Studio.
-- How to use the Navigation Architecture Component
-- Passing the data between navigation destinations.
+- The basic Android Architecture Components, ViewModel, and LiveData.
+- The data persistence library, Room.
+- Building and launching a coroutine.
 - Read the logs using the Logcat.
-- Android architecture components: ViewModel and LiveData.
-- How to use Retrofit network library.
+- Binding adapters in data binding.
+- Using the Retrofit networking library.
 
 
 Getting Started
 ---------------
 
 1. Download and run the app.
-2. You need Android Studio 3.2 or higher to build this project.
+2. You need Android Studio 3.4 or higher to build this project.
 
 License
 -------
