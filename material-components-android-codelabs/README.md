@@ -1,5 +1,3 @@
-# Codelabs for Material Components for Android (MDC-Android)
+# MDC-102 for Material Components for Android (Kotlin)
 
-[Material Components for Android](https://material.io/components/android/) are modular and customizable UI
-components that implement Material Design. This repo houses the source for the [Building Beautiful
-Apps Faster](https://codelabs.developers.google.com/codelabs/mdc-android/index.html) codelab.
+Contains starter code structure for the MDC-102 Kotlin codelab.
