@@ -30,9 +30,8 @@
         <ImageView
             android:id="@+id/image_view"
             android:layout_width="match_parent"
-            android:layout_height="400dp"
+            android:layout_height="0dp"
             android:layout_weight="1"
-            android:src="@drawable/android_cupcake"
             android:contentDescription="@string/description_image"
             android:scaleType="fitCenter" />
 
@@ -44,7 +43,7 @@
             android:textAppearance="@style/TextAppearance.AppCompat.Large" />
 
 
-        <RadioGroup
+        <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
@@ -83,22 +82,24 @@
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal">
+                android:orientation="vertical">
+
+                <ProgressBar
+                    android:id="@+id/progress_bar"
+                    style="@android:style/Widget.ProgressBar.Horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:progress="0"
+                    android:visibility="gone"
+                    android:layout_gravity="center_horizontal"
+                    />
+
                 <Button
                     android:id="@+id/cancel_button"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/cancel_work"
                     android:visibility="gone"
-                    />
-
-                <ProgressBar
-                    android:id="@+id/progress_bar"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:indeterminate="true"
-                    android:visibility="gone"
-                    android:layout_gravity="center_horizontal"
                     />
             </LinearLayout>
 
